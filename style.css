@@ -1,0 +1,1069 @@
+body {
+    margin: 0;
+    font-family: 'Comic Neue', cursive;
+    font-size: 36px;
+    color: rgba(175, 122, 31, 1);
+    background-color: rgba(255, 252, 244, 1);
+}
+
+*,
+*:before
+*:after {
+    box-sizing: border-box;
+}
+
+/*Container*/
+.container {
+    width: 100%;
+    margin: 0 auto;   
+}
+
+/*Header*/
+.header {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;   
+}
+.header__inner {
+    max-width: calc(100% - 20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;   
+}
+
+/*Nav*/
+.nav {
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;   
+}
+.nav__link {
+    margin-left: 50px; /*отступ между кнопками*/
+    color:  rgba(52, 87, 26, 1);
+    background: rgba(255, 252, 244, 1);
+    padding: 10px;
+    transition: 1s linear;
+    text-decoration: none; /*подчёркивание ссылок*/    
+}
+.nav__link:first-child {
+    margin-left: 0; /*у первой кнопки отделять слева нечего*/  
+}
+.nav__link:hover {
+    color: rgba(255, 252, 244, 1);
+    background: rgba(242, 174, 28, 1);    
+}
+.topbutton {
+width: 100px;
+border: 5px solid rgba(52, 87, 26, 1);
+background: rgba(242, 174, 28, 1);
+text-align: center;
+padding: 10px;
+position: fixed;
+bottom: 50px;
+right: 50px;
+cursor: pointer;
+color: rgba(255, 252, 244, 1);
+font-family: 'Bebas Neue', cursive;
+font-size: 18px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-khtml-border-radius: 5px;
+text-decoration: none;   
+}
+
+/*Intro*/
+.intro {
+    display: flex;
+    width: 100%;
+    height: 1080px;
+    background: url("images/%D0%A4%D0%BE%D0%BD%20%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B9%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B.jpg") center no-repeat;
+}
+.slogan1 {
+    margin: 0;
+    position: absolute;
+    width: 378px;
+    height: 157px;
+    left: 402px;
+    top: 300px;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: left;
+    color: rgba(255, 252, 244, 1);
+    filter: blur(4px);
+}
+.slogan2 {
+    margin: 0;
+    position: absolute;
+    width: 378px;
+    height: 157px;
+    left: 780px;
+    top: 191px;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: right;
+    color:rgba(255, 252, 244, 1);
+    filter: blur(4px);  
+}
+
+/*Clients*/
+.clients {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 1080px; 
+}
+.logotip1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 0px;
+    top: 1080px;    
+}
+.clients_title {
+    margin: 0;
+    position: absolute;
+    width: 1088px;
+    height: 165px;
+    left: 510px;
+    top: 1147px;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: rgba(52, 87, 26, 1);
+}
+.clients_subtitle {
+    margin: 0;
+    position: absolute;
+    width: 1088px;
+    height: 105px;
+    left: 510px;
+    top: 1312px;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color:  rgba(244, 150, 25, 1); 
+}
+.clients_item {
+    width: 40%;
+    margin-top: 450px;
+    text-align: left;
+}
+.clients_nazvanie {
+    max-width: 900px;
+    max-height: 70px;
+    margin-left: 100px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+    position: absolute;
+    font-family: 'Comic Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    color: rgba(175, 122, 31, 1);
+}
+.clients_specifika {
+    max-width: 900px;
+    max-height: 59px;
+    margin-left: 100px;
+    margin-bottom: 5px;
+    margin-top: 70px;
+    position: absolute;
+    font-family: 'Comic Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    color: rgba(175, 122, 31, 1);
+}
+.clients_opisanie {
+    max-width: 900px;
+    max-height: 370px;
+    margin-left: 100px;
+    margin-bottom: 5px;
+    margin-top: 130px;
+    position: absolute;
+    font-family: 'Calligraffitti', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 56px;
+    color: rgba(242, 174, 28, 1);
+}
+.clients_foto {
+    margin-bottom: 5px;
+    margin-left: 1040px;
+}
+
+/*Plus*/
+.plus {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 1080px;  
+}
+.logotip2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 0px;
+    top: 2160px;    
+}
+.plus_title {
+    margin: 0;
+    position: absolute;
+    width: 534px;
+    height: 105px;
+    left: 693px;
+    top: 2160px;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: rgba(52, 87, 26, 1);
+}
+.plus_subtitle1 {
+    margin: 0;
+    position: absolute;
+    width: 539px;
+    height: 105px;
+    left: 693px;
+    top: 2218px;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: rgba(244, 150, 25, 1);
+}
+.plus_subtitle2 {
+    margin: 0;
+    position: absolute;
+    width: 541px;
+    height: 105px;
+    left: 677px;
+    top: 2271px;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: rgba(52, 87, 26, 1);
+}
+.plus_item {
+    width: 25%;
+    height: 50%;
+    text-align: center;   
+}
+.plus_icon1 {
+    margin: 0;
+    position: absolute;
+    width: 300px;
+    height: 301px;
+    left: 250px;
+    top: 2356px;
+}
+.plus_text1 {
+    margin: 0;
+    position: absolute;
+    width: 308px;
+    height: 110px;
+    left: 242px;
+    top: 2654px;
+    font-family: 'Comic Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    color: rgba(175, 122, 31, 1);   
+}
+.plus_icon2 {
+    margin: 0;
+    position: absolute;
+    width: 300px;
+    height: 298.2px;
+    left: 632px;
+    top: 2356px;
+}
+.plus_text2 {
+    margin: 0;
+    position: absolute;
+    width: 335px;
+    height: 110px;
+    left: 612px;
+    top: 2656px;
+    font-family: 'Comic Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    color: rgba(175, 122, 31, 1);
+}
+.plus_icon3 {
+    margin: 0;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 1014px;
+    top: 2356px;
+}
+.plus_text3 {
+    margin: 0;
+    position: absolute;
+    width: 328px;
+    height: 110px;
+    left: 1002px;
+    top: 2654px;
+    font-family: 'Comic Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    color:  rgba(175, 122, 31, 1);
+}
+.plus_icon4 {
+    margin: 0;
+    position: absolute;
+    width: 300px;
+    height: 334.25px;
+    left: 1396px;
+    top: 2310px;
+}
+.plus_text4 {
+    margin: 0;
+    position: absolute;
+    width: 233px;
+    height: 110px;
+    left: 1430px;
+    top: 2654px;
+    font-family: 'Comic Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    color: rgba(175, 122, 31, 1);  
+}
+.plus_icon5 {
+    margin: 0;
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    left: 250px;
+    top: 2825px;
+}
+.plus_text5 {
+    margin: 0;
+    position: absolute;
+    width: 193px;
+    height: 110px;
+    left: 304px;
+    top: 3111px;
+    font-family: 'Comic Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    color: rgba(175, 122, 31, 1);  
+}
+.plus_icon6 {
+    margin: 0;
+    position: absolute;
+    width: 300px;
+    height: 226.43px;
+    left: 632px;
+    top: 2821px;
+}
+.plus_text6 {
+    margin: 0;
+    position: absolute;
+    width: 373px;
+    height: 110px;
+    left: 593px;
+    top: 3111px;
+    font-family: 'Comic Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    color: rgba(175, 122, 31, 1);  
+}
+.plus_icon7 {
+    margin: 0;
+    position: absolute;
+    width: 300px;
+    height: 290px;
+    left: 1014px;
+    top: 2825px;
+}
+.plus_text7 {
+    margin: 0;
+    position: absolute;
+    width: 226px;
+    height: 110px;
+    left: 1051px;
+    top: 3111px;
+    font-family: 'Comic Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    color: rgba(175, 122, 31, 1);  
+}
+.plus_icon8 {
+    margin: 0;
+    position: absolute;
+    width: 300px;
+    height: 166.57px;
+    left: 1396px;
+    top: 2825px;
+}
+.plus_text8 {
+    margin: 0;
+    position: absolute;
+    width: 246px;
+    height: 110px;
+    left: 1423px;
+    top: 3111px;
+    font-family: 'Comic Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    color: rgba(175, 122, 31, 1);  
+}
+
+/*Transport*/
+.transport {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 1080px;  
+}
+.logotip3 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 0px;
+    top: 3240px;    
+}
+.transport_title1 {
+    margin: 0;
+    position: absolute;
+    width: 331px;
+    height: 105px;
+    left: 795px;
+    top: 3240px;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: rgba(52, 87, 26, 1);
+}
+.transport_title2 {
+    margin: 0;
+    position: absolute;
+    width: 741px;
+    height: 165px;
+    left: 590px;
+    top: 3298px;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: rgba(244, 150, 25, 1);
+}
+.transport_item {
+    text-align: center;
+    margin-top: 250px;
+}
+.transport_foto {
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: 0;
+    margin-left: 100px;
+    position: static;
+}
+.transport_nazvanie {
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: 0;
+    margin-left: 100px;
+    position: static;
+    font-family: 'Comic Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    color: rgba(175, 122, 31, 1);
+}
+
+/*Prizeps*/
+.prizeps {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 1080px;  
+}
+.logotip4 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 0px;
+    top: 4320px;    
+}
+.prizeps_title1 {
+    margin: 0;
+    position: absolute;
+    width: 304px;
+    height: 105px;
+    left: 808px;
+    top: 4320px;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: rgba(52, 87, 26, 1);
+}
+.prizeps_title2 {
+    margin: 0;
+    position: absolute;
+    width: 626px;
+    height: 165px;
+    left: 647px;
+    top: 4373px;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: rgba(244, 150, 25, 1);
+}
+.prizeps_item {
+    text-align: center;
+    margin-top: 399px;
+}
+.prizeps_foto {
+    max-width: 400px;
+    max-height: 400px;
+    margin-top: 0;
+    margin-left: 100px;
+    position: static;
+}
+.prizeps_nazvanie {
+    max-width: 450px;
+    max-height: 105px;
+    margin-top: 0;
+    margin-left: 100px;
+    position: static;
+    font-family: 'Comic Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 55.74px;
+    color: rgba(175, 122, 31, 1);
+}
+
+/*Team*/
+.team {
+    margin: 300px 0;
+    width: 100%;
+    height: 1080px;  
+}
+.logotip5 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 0px;
+    top: 5400px;    
+}
+.team_title {
+    margin: 0;
+    position: absolute;
+    width: 552px;
+    height: 105px;
+    left: 684px;
+    top: 5400px;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: rgba(52, 87, 26, 1);
+}
+.team_inner {
+    display: flex;
+}
+.team_item {
+    width: 25%;
+    margin-left: 100px; 
+}
+.team_photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.team_name {
+    margin-bottom: 0;
+    width: 250px;
+    height: 115px;
+    font-family: 'Comic Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    color: rgba(52, 87, 26, 1);
+}
+.team_prof {
+    margin-bottom: 5px;
+    width: 250px;
+    height: 150px;
+    font-family: 'Comic Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    color: rgba(244, 150, 25, 1);
+}
+
+/*Social*/
+.social {
+    display: flex;
+}
+.social_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    margin-right: 4px;
+}
+
+/*Zakaz*/
+.zakaz {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 1080px;  
+}
+.logotip6 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 0px;
+    top: 6480px;    
+}
+.zakaz_title {
+    margin: 0;
+    position: absolute;
+    width: 673px;
+    height: 165px;
+    left: 638px;
+    top: 6480px;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: rgba(52, 87, 26, 1);
+}
+.zakaz_item {
+    width: 33.333%;
+    height: 50%;
+    text-align: center;   
+}
+.zakaz_icon1 {
+    margin: 0;
+    position: absolute;
+    width: 300px;
+    height: 301px;
+    left: 244px;
+    top: 6777px;
+    font-family: 'Comic Neue', cursive;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 279px;
+    text-align: center;
+    color: rgba(242, 174, 28, 0.5);
+    padding: 20px 0px;
+    line-height: 1;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+    transition: 1s;
+}
+.zakaz_icon1:hover {
+    color: rgba(244, 150, 25, 1);
+    -webkit-text-shadow: 2px 2px 2px #000;
+    -moz-text-shadow: 2px 2px 2px #000;
+        text-shadow: 2px 2px 2px #000;
+    transform: scale(1.2); 
+}
+.zakaz_text1 {
+    margin: 0;
+    position: absolute;
+    width: 308px;
+    height: 110px;
+    left: 244px;
+    top: 6777px;
+    font-family: 'Comic Neue', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    color: rgba(175, 122, 31, 1);   
+}
+.zakaz_icon2 {
+    margin: 0;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 810px;
+    top: 6777px;
+    font-family: 'Comic Sans MS';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 279px;
+    text-align: center;
+    color: rgba(242, 174, 28, 0.5);
+    padding: 20px 0px;
+    line-height: 1;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+    transition: 1s;
+}
+.zakaz_icon2:hover {
+    color: rgba(244, 150, 25, 1);
+    -webkit-text-shadow: 2px 2px 2px #000;
+    -moz-text-shadow: 2px 2px 2px #000;
+        text-shadow: 2px 2px 2px #000;
+    transform: scale(1.2); 
+}
+.zakaz_text2 {
+    margin: 0;
+    position: absolute;
+    width: 335px;
+    height: 110px;
+    left: 810px;
+    top: 6777px;
+    font-family: 'Comic Neue', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    color: rgba(175, 122, 31, 1);
+}
+.zakaz_icon3 {
+    margin: 0;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 1348px;
+    top: 6777px;
+    font-family: 'Comic Sans MS';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 279px;
+    text-align: center;
+    color: rgba(242, 174, 28, 0.5);
+    padding: 20px 0px;
+    line-height: 1;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+    transition: 1s;
+}
+.zakaz_icon3:hover {
+    color: rgba(244, 150, 25, 1);
+    -webkit-text-shadow: 2px 2px 2px #000;
+    -moz-text-shadow: 2px 2px 2px #000;
+        text-shadow: 2px 2px 2px #000;
+    transform: scale(1.2); 
+}
+.zakaz_text3 {
+    margin: 0;
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    left: 1311px;
+    top: 6777px;
+    font-family: 'Comic Neue', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    color:  rgba(175, 122, 31, 1);
+}
+.zakaz_icon4 {
+    margin: 0;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 244px;
+    top: 7077px;
+    font-family: 'Comic Sans MS';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 279px;
+    text-align: center;
+    color: rgba(242, 174, 28, 0.5);
+    padding: 20px 0px;
+    line-height: 1;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+    transition: 1s;
+}
+.zakaz_icon4:hover {
+    color: rgba(244, 150, 25, 1);
+    -webkit-text-shadow: 2px 2px 2px #000;
+    -moz-text-shadow: 2px 2px 2px #000;
+        text-shadow: 2px 2px 2px #000;
+    transform: scale(1.2); 
+}
+.zakaz_text4 {
+    margin: 0;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 244px;
+    top: 7077px;
+    font-family: 'Comic Neue', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    color: rgba(175, 122, 31, 1);  
+}
+.zakaz_icon5 {
+    margin: 0;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 810px;
+    top: 7077px;
+    font-family: 'Comic Sans MS';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 279px;
+    text-align: center;
+    color: rgba(242, 174, 28, 0.5);
+    padding: 20px 0px;
+    line-height: 1;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+    transition: 1s;
+}
+.zakaz_icon5:hover {
+    color: rgba(244, 150, 25, 1);
+    -webkit-text-shadow: 2px 2px 2px #000;
+    -moz-text-shadow: 2px 2px 2px #000;
+        text-shadow: 2px 2px 2px #000;
+    transform: scale(1.2); 
+}
+.zakaz_text5 {
+    margin: 0;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 810px;
+    top: 7077px;
+    font-family: 'Comic Neue', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    color: rgba(175, 122, 31, 1);  
+}
+.zakaz_icon6 {
+    margin: 0;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 1348px;
+    top: 7077px;
+    font-family: 'Comic Sans MS';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 279px;
+    text-align: center;
+    color: rgba(242, 174, 28, 0.5);
+    padding: 20px 0px;
+    line-height: 1;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+    transition: 1s;
+}
+.zakaz_icon6:hover {
+    color: rgba(244, 150, 25, 1);
+    -webkit-text-shadow: 2px 2px 2px #000;
+    -moz-text-shadow: 2px 2px 2px #000;
+        text-shadow: 2px 2px 2px #000;
+    transform: scale(1.2); 
+}
+.zakaz_text6 {
+    margin: 0;
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    left: 1311px;
+    top: 7077px;
+    font-family: 'Comic Neue', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: center;
+    color: rgba(175, 122, 31, 1);
+}
+
+/*Rossia*/
+.Rossia {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 1080px;  
+}
+.logotip7 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 0px;
+    top: 7560px;    
+}
+.Rossia_title {
+    margin: 0;
+    position: absolute;
+    width: 1063px;
+    height: 165px;
+    left: 428px;
+    top: 7560px;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: rgba(52, 87, 26, 1);
+}
+.Carta {
+    position: absolute;
+    width: 1500px;
+    height: 881.23px;
+    left: 210px;
+    top: 7725px;
+}
+
+/*Contact*/
+.contact {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 1080px;  
+}
+.logotip8 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 0px;
+    top: 8640px;    
+}
+.rectangle {
+    position: absolute;
+    width: 700px;
+    height: 800px;
+    left: 300px;
+    top: 8790px;
+    background: rgba(242, 174, 28, 0.2);
+    border: 10px solid rgba(244, 150, 25, 0.5);
+}
+.text_center {
+    text-align: center;
+}
+.carta {
+    position: absolute;
+    left: 1082px;
+    top: 8940px;
+}
+
+/*Podval*/
+.podval {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    top: 10000px;
+    left: 0;
+    background-color: rgba(52, 87, 26, 1); 
+}
+.podval_podval {
+    width: 300px;
+    height: 300px;
+    left: 0px;
+    top: 10000px;
+}
+.podval_item {
+    position: relative;
+    width: 20%;
+    height: 270px;
+}
+.podval_content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
